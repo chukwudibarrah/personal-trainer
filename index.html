@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f17debc2ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Personal Trainer</title>
+  </head>
+
+  <body>
+    <header class="h-screen">
+      <nav class="flex flex-wrap items-center justify-between px-2 py-3">
+        <div
+          class="container px-4 mx-auto flex flex-wrap items-center justify-between bg-white bg-opacity-0 z-40"
+        >
+          <div
+            class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start"
+          >
+            <a
+              class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-[#565554]"
+              href="#"
+            >
+              Personal<br />Trainer
+            </a>
+            <button
+              class="text-[#565554] cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onclick="toggleNavbar('example-collapse-navbar')"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div
+            class="lg:flex flex-grow items-center hidden"
+            id="example-collapse-navbar"
+          >
+            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li class="nav-item">
+                <a
+                  class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#565554] hover:opacity-75"
+                  href="#"
+                  ><span class="ml-2">About</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#565554] hover:opacity-75"
+                  href="#"
+                  ><span class="ml-2">Find trainer</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#565554] hover:opacity-75"
+                  href="#"
+                  ><span class="ml-2">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script>
+        function toggleNavbar(collapseID) {
+          document.getElementById(collapseID).classList.toggle("hidden");
+          document.getElementById(collapseID).classList.toggle("flex");
+        }
+      </script>
+
+      <section
+        class="bg-cover h-full bg-center bg-no-repeat bg-[url('../assets/images/climberbg.png')] bg-gray-0 bg-blend-multiply relative top-[-90px] z-0 grid justify-start items-end"
+      >
+        <div
+          class="md:px-28 px-10 mx-auto max-w-screen-xl text-start py-24 lg:py-56"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-[#565554] md:text-5xl lg:text-6xl"
+          >
+            Main text here
+          </h1>
+          <p class="mb-8 text-lg font-normal text-gray-700 lg:text-xl">
+            Add the extras here.
+          </p>
+          <a
+            href="#"
+            class="hover:text-blue-700 items-center py-3 px-5 text-base font-medium text-white rounded-lg bg-blue-700 hover:bg-white hover:border-blue-700 border-2 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Book trainer
+          </a>
+          <!-- <div
+            class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-end"
+          >
+            <a
+              href="#"
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-[#565554] rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            >
+              Get started
+              <svg
+                aria-hidden="true"
+                class="ml-2 -mr-1 w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-gray-400 rounded-lg border border-gray-400 hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+            >
+              Learn more
+            </a>
+          </div> -->
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="h-screen bg-[#565554] -mt-1 w-screen">
+        <div class="text-[#F6F5AE] z-0 text-end relative top-24 px-10 md:px-32">
+          <h2 class="text-6xl md:text-9xl font-semibold z-0 md:mb-7">
+            Something about doing things.
+          </h2>
+          <p>Add something more here.</p>
+        </div>
+        <div class="z-40 md:w-full w-[550px] relative md:-top-40">
+          <img src="../assets/images/ropes.png" alt="work out" class="z-40" />
+        </div>
+      </section>
+
+      <section class="h-screen w-screen flex place-content-evenly">
+        <div class="text-center md:my-48 grid justify-center">
+          <div class="mt-10">
+            <h2 class="text-4xl md:text-7xl font-bold px-14">
+              What our clients say
+            </h2>
+          </div>
+          <div class="md:flex justify-evenly">
+            <div class="grid content-center w-60 md:w-2/12">
+              <img src="../assets/avatars/avatar1.svg" alt="work out" />
+              <h3>Client name</h3>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
+            <div class="w-60 md:w-2/12">
+              <img src="../assets/avatars/avatar2.svg" alt="work out" />
+              <h3>Client name</h3>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
+            <div class="w-60 md:w-2/12">
+              <img src="../assets/avatars/avatar3.svg" alt="work out" />
+              <h3>Client name</h3>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
+            <div class="w-60 md:w-2/12">
+              <img src="../assets/avatars/avatar4.svg" alt="work out" />
+              <h3>Client name</h3>
+              <p>
+                "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit..."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
